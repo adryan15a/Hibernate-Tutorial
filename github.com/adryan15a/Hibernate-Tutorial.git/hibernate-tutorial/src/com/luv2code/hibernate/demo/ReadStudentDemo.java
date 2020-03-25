@@ -20,7 +20,6 @@ public class ReadStudentDemo {
 		Session session = factory.getCurrentSession();
 		
 		try {
-			
 			//create the student object
 			System.out.println("Creating a new student object");
 			
@@ -38,7 +37,6 @@ public class ReadStudentDemo {
 			//commit tranzaction
 			session.getTransaction().commit();
 			
-			
 			//My new code
 			
 			//find out the student`s` id: primary key
@@ -53,7 +51,7 @@ public class ReadStudentDemo {
 			
 			Student myStudent = session.get(Student.class, student1.getId());
 			
-			System.out.println("Get complete: "+myStudent);
+			System.out.println("Get complete: "+  myStudent);
 			
 			//commit the transaction
 			session.getTransaction().commit();

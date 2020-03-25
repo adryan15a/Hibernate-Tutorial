@@ -15,6 +15,6 @@
 	</property>
         
     <mapping package="com.luv2code.hibernate.demo.entity" />
-     
+   
   </session-factory>
 </hibernate-configuration>
